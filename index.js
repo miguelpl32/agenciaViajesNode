@@ -13,7 +13,7 @@ db.authenticate()
   .catch((error) => console.log(error));
 
 //Definir puerto
-const host = process.env.HOST || "0.0.0.0";
+const host = process.env.HOST;
 const port = process.env.PORT || 4000;
 
 //Habilitar PUG
