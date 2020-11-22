@@ -16,3 +16,4 @@ Proyecto Agencia de Viajes realizado con Node, Sequelize, Mysql
 ## Lenguajes
 + JavaScript
 + Nodejs+
++ Pug
