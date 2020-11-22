@@ -12,7 +12,7 @@ Proyecto Agencia de Viajes realizado con Node, Sequelize, Mysql
 
 [Visita el proyecto](https://viajesnode.herokuapp.com/)
 
-![](public/portada-viajes.jpg)
+![](public/img/portada-viajes.jpg)
 
 
 ## Lenguajes
