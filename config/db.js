@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./variables.env" });
 
 const db = new Sequelize(
-  'mysql -hcontainers-us-west-71.railway.app -uroot -pLhilj41QcLP2FTsZeNh6 --port 7113 --protocol=TCP railway'
- /* process.env.DATABASE,
+  
+  process.env.DATABASE,
   process.env.USERNAME,
   process.env.PASSWORD,
   {
@@ -21,7 +21,7 @@ const db = new Sequelize(
       idle: 50000,
     },
     operatorAliases: false,
-  }*/
+  }
 );
 
 export default db;
