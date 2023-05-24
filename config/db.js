@@ -3,12 +3,12 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./variables.env" });
 
 const db = new Sequelize(
-  process.env.DATABASE,
-  process.env.USERNAME,
-  process.env.PASSWORD,
+  process.env.MYSQLDATABASE,
+  process.env.MYSQLPASSWORD,
+  process.env.BD_PASSWORD,
   {
-    host: process.env.HOST,
-    port: process.env.PORT,
+    host: process.env.MYSQLHOST,
+    port: process.env.MYSQLPORT,
     dialect: "mysql",
     define: {
       timestamps: false,
