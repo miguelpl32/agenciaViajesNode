@@ -2,15 +2,19 @@ import Sequelize from "sequelize";
 import dotenv from "dotenv";
 dotenv.config({ path: "./variables.env" });
 
+var BD_NAME;
+var BD_USER;
+var BD_PASSWORD;
+
+
 const db = new Sequelize(
-  
-  process.env.DATABASE,
-  process.env.USERNAME,
-  process.env.PASSWORD,
+  BD_NAME= 'railway',
+  BD_USER= 'root',
+  BD_PASSWORD='Lhilj41QcLP2FTsZeNh6',
   {
-    host: process.env.HOST,
-    port: process.env.PORT,
-    dialect: "mysql",
+    host:'containers-us-west-71.railway.app',
+    dialect: 'mysql',
+    port: 7113,
     define: {
       timestamps: false,
     },
