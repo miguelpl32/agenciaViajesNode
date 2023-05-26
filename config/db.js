@@ -3,25 +3,27 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./variables.env" });
 
 const db = new Sequelize(
-  process.env.BD_NAME,
-  process.env.BD_USER,
-  process.env.BD_PASSWORD,
+  process.env.MYSQLDATABASE,
+  process.env.MYSQLUSER,
+  process.env.MYSQLPASSWORD,
   {
-    host: process.env.HOST,
-    port: process.env.PORT,
-    dialect: "mysql",
+    host: process.env.MYSQLHOST,
+    
+    port: process.env.MYSQLPORT,
+    dialect: 'mysql',
+    
     define: {
       timestamps: false,
+      freezeTableName: true
     },
     pool: {
       max: 5,
       min: 0,
-      acquire: 30000,
-      idle: 10000,
+      acquire: 300000,
+      idle: 100000,
     },
     operatorAliases: false,
-
- }
+  }
 );
 
 export default db;
