@@ -13,8 +13,8 @@ db.authenticate()
   .catch((error) => console.log(error));
 
 //Definir puerto
-const host = process.env.MYSQLHOST ;
-const port = process.env.MYSQLPORT ;
+const host = 'containers-us-west-23.railway.app' ;
+const port = 5527  ;
 
 //Habilitar PUG
 app.set("view engine", "pug");
