@@ -13,8 +13,8 @@ db.authenticate()
   .catch((error) => console.log(error));
 
 //Definir puerto
-const host = process.env.HOST || "0.0.0.0";
-const port = process.env.PORT || 4000;
+const host = process.env.MYSQLHOST || "0.0.0.0";
+const port = process.env.MYSQLPORT || 4000;
 
 //Habilitar PUG
 app.set("view engine", "pug");
