@@ -7,7 +7,7 @@ const db = new Sequelize(
   process.env.MYSQLUSER,
   process.env.MYSQLPASSWORD,
   {
-    host: process.env.HOST,
+    host: process.env.MYSQLHOST,
     
     port: process.env.MYSQLPORT,
     dialect: 'mysql',
