@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js ",
-    "build-agencia": "build-agencia -s public"
+    "build-agencia": "npm run build"
   },
   "type": "module",
   "author": "Miguel Pariente",
